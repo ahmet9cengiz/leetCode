@@ -1,2 +1,3 @@
 ./venv
-./idea
+./.idea
+./tests/.pytest_cache

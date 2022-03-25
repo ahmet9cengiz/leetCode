@@ -1,5 +1,6 @@
 class Solution(object):
 
+    # Time Complexity: O(n)
     @staticmethod
     def two_sum(nums, target):
         remainders = {}
@@ -11,9 +12,3 @@ class Solution(object):
                 remainders[target-nums[i]] = i
 
         raise Exception("No solution!")
-
-
-if __name__ == '__main__':
-    # begin
-    s = Solution()
-    print(s.two_sum([3, 2, 4], 6))
