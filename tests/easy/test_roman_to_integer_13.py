@@ -1,4 +1,3 @@
-import pytest
 from src.easy import roman_to_integer_13
 
 
