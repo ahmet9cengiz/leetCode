@@ -10,7 +10,7 @@ class Solution(object):
         left_index = 0
         right_index = len(x) - 1
 
-        while left_index > right_index:
+        while left_index < right_index:
             if x[left_index] != x[right_index]:
                 return False
             else:

@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "Enter question name: "
+read -r func
+echo "Enter question no: "
+read -r num
+touch ./src/easy/${func}_${num}.py
+touch ./tests/easy/test_${func}_${num}.py
+
+echo 'class Solution(object):' >> ./src/easy/${func}_${num}.py
+echo '' >> ./src/easy/${func}_${num}.py
+echo '    # Time Complexity: O(n)' >> ./src/easy/${func}_${num}.py
+echo '    @staticmethod' >> ./src/easy/${func}_${num}.py
+echo "    def $func():" >> ./src/easy/${func}_${num}.py
+
+echo "from src.easy import ${func}_${num}" >> ./tests/easy/test_${func}_${num}.py
+echo '' >> ./tests/easy/test_${func}_${num}.py
+echo '' >> ./tests/easy/test_${func}_${num}.py
+echo "def test_$func():" >> ./tests/easy/test_${func}_${num}.py
+echo "    s = ${func}_${num}.Solution()" >> ./tests/easy/test_${func}_${num}.py
+echo "    assert s.$func()" >> ./tests/easy/test_${func}_${num}.py
+echo "    assert s.$func()" >> ./tests/easy/test_${func}_${num}.py
+echo "    assert s.$func()" >> ./tests/easy/test_${func}_${num}.py
