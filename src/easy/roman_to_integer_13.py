@@ -32,3 +32,6 @@ class Solution(object):
             i += 1
 
         return number
+
+if __name__ == '__main__':
+    s = Solution()

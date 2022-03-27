@@ -23,3 +23,5 @@ class Solution(object):
             prefix += current_letter
             i += 1
 
+if __name__ == '__main__':
+    s = Solution()

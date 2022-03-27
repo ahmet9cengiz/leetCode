@@ -12,3 +12,6 @@ class Solution(object):
                 remainders[target-nums[i]] = i
 
         raise Exception("No solution!")
+
+if __name__ == '__main__':
+    s = Solution()
