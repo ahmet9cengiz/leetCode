@@ -31,3 +31,7 @@ class Solution(object):
         else:
             list2.next = self.merge_two_sorted_lists(list1, list2.next)
             return list2
+
+if __name__ == '__main__':
+    s = Solution()
+    

@@ -10,7 +10,14 @@ echo 'class Solution(object):' >> ./src/easy/${func}_${num}.py
 echo '' >> ./src/easy/${func}_${num}.py
 echo '    # Time Complexity: O(n)' >> ./src/easy/${func}_${num}.py
 echo '    @staticmethod' >> ./src/easy/${func}_${num}.py
-echo "    def $func():" >> ./src/easy/${func}_${num}.py
+echo "    def ${func}():" >> ./src/easy/${func}_${num}.py
+echo "" >> ./src/easy/${func}_${num}.py
+echo "" >> ./src/easy/${func}_${num}.py
+echo "if __name__ == '__main__':" >> ./src/easy/${func}_${num}.py
+echo "s = Solution()" >> ./src/easy/${func}_${num}.py
+echo "s.${func}()" >> ./src/easy/${func}_${num}.py
+
+
 
 echo "from src.easy import ${func}_${num}" >> ./tests/easy/test_${func}_${num}.py
 echo '' >> ./tests/easy/test_${func}_${num}.py
