@@ -14,8 +14,8 @@ echo "    def ${func}():" >> ./src/easy/${func}_${num}.py
 echo "" >> ./src/easy/${func}_${num}.py
 echo "" >> ./src/easy/${func}_${num}.py
 echo "if __name__ == '__main__':" >> ./src/easy/${func}_${num}.py
-echo "s = Solution()" >> ./src/easy/${func}_${num}.py
-echo "s.${func}()" >> ./src/easy/${func}_${num}.py
+echo "    s = Solution()" >> ./src/easy/${func}_${num}.py
+echo "    s.${func}()" >> ./src/easy/${func}_${num}.py
 
 
 
